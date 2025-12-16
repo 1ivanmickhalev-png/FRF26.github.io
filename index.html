@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Мой сайт на GitHub!</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: 0;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 50px;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 САЙТ ЗАПУЩЕН!</h1>
+        <p>GitHub Pages — работает гарантированно!</p>
+        <p>Адрес: ваш-логин.github.io</p>
+        <p>Бесплатно | 24/7 | Из любой страны</p>
+        <p id="datetime"></p>
+    </div>
+
+    <script>
+        function updateTime() {
+            const now = new Date();
+            document.getElementById('datetime').innerHTML = 
+                'Время: ' + now.toLocaleTimeString('ru-RU');
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body>
+</html>
